@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import Rishabh from './components/Rishabh';
+import {Rishabh} from './components/Rishabh';
 
 function App() {
   return (
