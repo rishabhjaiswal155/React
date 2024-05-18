@@ -6,6 +6,7 @@ import Hello from './components/Hello';
 import Friends from './components/Friends';
 import Jigri from './components/Jigri';
 import Message from './components/Messsage';
+import Count from './components/Count';
 function App() {
   return (
     <div className="App">
@@ -31,6 +32,7 @@ function App() {
         <button>smash</button>
       </Jigri>
  <Message/>
+ <Count/>
       </div>
   );
 }
