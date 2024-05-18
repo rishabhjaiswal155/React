@@ -5,6 +5,7 @@ import Rishi from './components/Rishi';
 import Hello from './components/Hello';
 import Friends from './components/Friends';
 import Jigri from './components/Jigri';
+import Message from './components/Messsage';
 function App() {
   return (
     <div className="App">
@@ -29,7 +30,7 @@ function App() {
         <p>(This is Children props)</p>
         <button>smash</button>
       </Jigri>
- 
+ <Message/>
       </div>
   );
 }
