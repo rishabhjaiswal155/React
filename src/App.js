@@ -4,7 +4,9 @@ import {Rishabh} from './components/Rishabh';
 import Rishi from './components/Rishi';
 import Hello from './components/Hello';
 import Friends from './components/Friends';
+import Friends1 from './components/Friends1';
 import Jigri from './components/Jigri';
+import Jigri1 from './components/Jigri1';
 import Message from './components/Messsage';
 import Count from './components/Count';
 function App() {
@@ -33,6 +35,13 @@ function App() {
       </Jigri>
  <Message/>
  <Count/>
+ <Friends1 name="Dnyaneshwar" nickname="Mauli">
+        <p>(This is Children props)</p>
+      </Friends1>
+      <Jigri1 name="Dnyaneshwar" nickname="Mauli">
+        <p>(This is Children props)</p>
+        <button>smash</button>
+      </Jigri1>
       </div>
   );
 }
