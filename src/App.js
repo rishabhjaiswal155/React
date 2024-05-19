@@ -9,10 +9,12 @@ import Jigri from './components/Jigri';
 import Jigri1 from './components/Jigri1';
 import Message from './components/Messsage';
 import Count from './components/Count';
+import FunctionClick from './components/FunctionClick';
+import ClassClick from './components/ClassClick';
 function App() {
   return (
     <div className="App">
-      <Rishabh/>
+      {/* <Rishabh/>
       <Rishi/>
       <Hello/>
       <Friends name="Rishabh" nickname="Rishi">
@@ -41,7 +43,9 @@ function App() {
       <Jigri1 name="Dnyaneshwar" nickname="Mauli">
         <p>(This is Children props)</p>
         <button>smash</button>
-      </Jigri1>
+      </Jigri1> */}
+      <FunctionClick/>
+      <ClassClick/>
       </div>
   );
 }
