@@ -6,11 +6,15 @@ import React, { Component } from 'react'
       this.state = {
          message: "Hello"
        }
-       this.ClickHandler=this.ClickHandler.bind(this)
+    //    this.ClickHandler=this.ClickHandler.bind(this)
     }
-    ClickHandler(){
-        this.setState({message:"Hii & Welcome"})
-    }
+//     ClickHandler(){
+//         this.setState({message:"Hii & Welcome"})
+//     }
+ClickHandler = () =>{
+    this.setState({message: "Hii & Welcome"})
+}
+
   render() {
     return (
       <div>
