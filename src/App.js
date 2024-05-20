@@ -11,6 +11,7 @@ import Message from './components/Messsage';
 import Count from './components/Count';
 import FunctionClick from './components/FunctionClick';
 import ClassClick from './components/ClassClick';
+import EventBind from './components/EventBind';
 function App() {
   return (
     <div className="App">
@@ -46,6 +47,7 @@ function App() {
       </Jigri1> */}
       <FunctionClick/>
       <ClassClick/>
+      <EventBind/>
       </div>
   );
 }
