@@ -4,7 +4,7 @@ class ConditionalRendering extends Component {
       super(props)
     
       this.state = {
-         isLoggedIn: false
+         isLoggedIn: true
       }
     }
   render() {
@@ -20,7 +20,9 @@ class ConditionalRendering extends Component {
 //         Message=<div>Hello and welcome Guest</div>
 //         return <div>{Message}</div>
 
-return this.state.isLoggedIn ? <div>Hello and welcome Rishabh</div>:<div>Hello and welcome Guest</div>
+//return this.state.isLoggedIn ? <div>Hello and welcome Rishabh</div>:<div>Hello and welcome Guest</div>
+
+return this.state.isLoggedIn && <div>Hello and welcome Rishabh</div>
 }
 }
 export default ConditionalRendering
