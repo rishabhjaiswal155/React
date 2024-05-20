@@ -6,6 +6,7 @@ import React, { Component } from 'react'
       this.state = {
          message: "Hello"
        }
+       this.ClickHandler=this.ClickHandler.bind(this)
     }
     ClickHandler(){
         this.setState({message:"Hii & Welcome"})
@@ -15,7 +16,8 @@ import React, { Component } from 'react'
       <div>
         <div>{this.state.message}</div>
         {/* <button onClick={this.ClickHandler.bind(this)}>ClickMe</button> */}
-        <button onClick={()=>this.ClickHandler()}>ClickMe</button> 
+        {/* <button onClick={()=>this.ClickHandler()}>ClickMe</button>  */}
+        <button onClick={this.ClickHandler}>ClickMe</button> 
       </div>
     )
   }
