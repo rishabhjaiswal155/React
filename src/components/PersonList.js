@@ -18,7 +18,7 @@ function PersonList() {
     ]
 
     // const PersonList=persons.map(person=><h2>I am {person.name},I am {person.age} years old,My id is {person.id}</h2>)
-    const PersonList=persons.map(person=><Person person={person}/>)
+    const PersonList=persons.map(person=><Person key={person.id} person={person}/>)
   return <div>{PersonList}</div>
     
 }
