@@ -14,6 +14,7 @@ import ClassClick from './components/ClassClick';
 import EventBind from './components/EventBind';
 import ParentComponent from './components/ParentComponent';
 import ConditionalRendering from './components/ConditionalRendering';
+import ListRendering from './components/ListRendering';
 function App() {
   return (
     <div className="App">
@@ -47,11 +48,12 @@ function App() {
         <p>(This is Children props)</p>
         <button>smash</button>
       </Jigri1> */}
-      <FunctionClick/>
+      {/* <FunctionClick/>
       <ClassClick/>
       <EventBind/>
-      <ParentComponent/>
-      <ConditionalRendering/>
+      <ParentComponent/> */}
+      {/* <ConditionalRendering/> */}
+      <ListRendering/>
       </div>
   );
 }
