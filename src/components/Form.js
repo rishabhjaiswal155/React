@@ -3,6 +3,7 @@ import React, { Component } from 'react'
 class Form extends Component {
     constructor(props) {
       super(props)
+     
     
       this.state = {
          userName: '',
@@ -29,16 +30,17 @@ class Form extends Component {
       
       
   render() {
+    const{userName,comments,topics}=this.state
     return (
       <div><b>Form</b><br/>
       <form onSubmit={this.HandleSubmitEvent}>
         <label>UserName:</label>
-        <input type='text' value={this.state.userName} onChange={this.HandleUserNameEvent}/>
+        <input type='text' value={this.userName} onChange={this.HandleUserNameEvent}/>
         <br/><label>Comments:</label>
-        <textArea value={this.state.comments} onChange={this.HandleCommentEvent}/>
+        <textarea value={this.comments} onChange={this.HandleCommentEvent}/>
         <br/>
         <label>Topics</label>
-        <select value={this.state.topic} onChange={this.HandleTopicEvent}>
+        <select value={this.topic} onChange={this.HandleTopicEvent}>
             <option value='React'>ReactJS</option>
             <option value='Angular'>Angular</option>
             <option value='Vue'>VueJs</option>
