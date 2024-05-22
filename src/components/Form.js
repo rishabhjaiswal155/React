@@ -3,8 +3,6 @@ import React, { Component } from 'react'
 class Form extends Component {
     constructor(props) {
       super(props)
-     
-    
       this.state = {
          userName: '',
          comments: '',
@@ -30,7 +28,7 @@ class Form extends Component {
       
       
   render() {
-    const{userName,comments,topics}=this.state
+    const{userName,comments,topic}=this.state
     return (
       <div><b>Form</b><br/>
       <form onSubmit={this.HandleSubmitEvent}>
