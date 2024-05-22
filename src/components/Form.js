@@ -35,12 +35,12 @@ class Form extends Component {
       <div><b>Form</b><br/>
       <form onSubmit={this.HandleSubmitEvent}>
         <label>UserName:</label>
-        <input type='text' value={this.userName} onChange={this.HandleUserNameEvent}/>
+        <input type='text' value={userName} onChange={this.HandleUserNameEvent}/>
         <br/><label>Comments:</label>
-        <textarea value={this.comments} onChange={this.HandleCommentEvent}/>
+        <textarea value={comments} onChange={this.HandleCommentEvent}/>
         <br/>
         <label>Topics</label>
-        <select value={this.topic} onChange={this.HandleTopicEvent}>
+        <select value={topic} onChange={this.HandleTopicEvent}>
             <option value='React'>ReactJS</option>
             <option value='Angular'>Angular</option>
             <option value='Vue'>VueJs</option>
