@@ -55,7 +55,7 @@ function App() {
       <ParentComponent/> */}
       {/* <ConditionalRendering/> */}
       <ListRendering/>
-      <PersonList/>
+      {/* <PersonList/> */}
       </div>
   );
 }
