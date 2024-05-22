@@ -17,6 +17,7 @@ import ConditionalRendering from './components/ConditionalRendering';
 import ListRendering from './components/ListRendering';
 import PersonList from './components/PersonList';
 import StyleSheet from './components/StyleSheet';
+import Inline from './components/Inline';
 function App() {
   return (
     <div className="App">
@@ -58,6 +59,7 @@ function App() {
       {/* <ListRendering/> */}
       {/* <PersonList/> */}
       <StyleSheet primary={true}/>
+      <Inline/>
       </div>
   );
 }
