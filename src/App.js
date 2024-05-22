@@ -16,6 +16,7 @@ import ParentComponent from './components/ParentComponent';
 import ConditionalRendering from './components/ConditionalRendering';
 import ListRendering from './components/ListRendering';
 import PersonList from './components/PersonList';
+import StyleSheet from './components/StyleSheet';
 function App() {
   return (
     <div className="App">
@@ -54,8 +55,9 @@ function App() {
       <EventBind/>
       <ParentComponent/> */}
       {/* <ConditionalRendering/> */}
-      <ListRendering/>
+      {/* <ListRendering/> */}
       {/* <PersonList/> */}
+      <StyleSheet primary={true}/>
       </div>
   );
 }
