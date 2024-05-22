@@ -20,13 +20,14 @@ import StyleSheet from './components/StyleSheet';
 import Inline from './components/Inline';
 import './appStyle.css';
 import styles from './appStyle.module.css'
+import Form from './components/Form';
 function App() {
   return (
     <div className="App">
-      <h1 className='error'>Error</h1>
+      {/* <h1 className='error'>Error</h1>
       <h1 className={styles.success}>Success</h1>
-      {/* <Rishabh/>
-      <Rishi/>
+      {/* <Rishabh/> */}
+      {/* <Rishi/>
       <Hello/>
       <Friends name="Rishabh" nickname="Rishi">
         <p>Son of Sunita Jaiswal(This is Children props)</p>
@@ -54,7 +55,7 @@ function App() {
       <Jigri1 name="Dnyaneshwar" nickname="Mauli">
         <p>(This is Children props)</p>
         <button>smash</button>
-      </Jigri1> */}
+      </Jigri1> */} 
       {/* <FunctionClick/>
       <ClassClick/>
       <EventBind/>
@@ -62,8 +63,9 @@ function App() {
       {/* <ConditionalRendering/> */}
       {/* <ListRendering/> */}
       {/* <PersonList/> */}
-      <StyleSheet primary={true}/>
-      <Inline/>
+      {/* <StyleSheet primary={true}/>
+      <Inline/> */}
+      <Form/>
       </div>
   );
 }
