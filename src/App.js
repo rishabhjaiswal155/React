@@ -22,6 +22,7 @@ import './appStyle.css';
 import styles from './appStyle.module.css'
 import Form from './components/Form';
 import LifeCycleA from './components/LifeCycleA';
+import FragmentDemo from './components/FragmentDemo';
 function App() {
   return (
     <div className="App">
@@ -67,7 +68,8 @@ function App() {
       {/* <StyleSheet primary={true}/>
       <Inline/> */}
       {/* <Form/> */}
-      <LifeCycleA/>
+      {/* <LifeCycleA/> */}
+<FragmentDemo/>
       </div>
   );
 }
