@@ -23,6 +23,7 @@ import styles from './appStyle.module.css'
 import Form from './components/Form';
 import LifeCycleA from './components/LifeCycleA';
 import FragmentDemo from './components/FragmentDemo';
+import Table from './components/Table';
 function App() {
   return (
     <div className="App">
@@ -70,6 +71,7 @@ function App() {
       {/* <Form/> */}
       {/* <LifeCycleA/> */}
 <FragmentDemo/>
+<Table/>
       </div>
   );
 }
