@@ -25,6 +25,7 @@ import LifeCycleA from './components/LifeCycleA';
 import FragmentDemo from './components/FragmentDemo';
 import Table from './components/Table';
 import ParentComp from './components/ParentComp';
+import RefDemo from './components/RefDemo';
 function App() {
   return (
     <div className="App">
@@ -73,7 +74,8 @@ function App() {
       {/* <LifeCycleA/> */}
 {/* <FragmentDemo/> */}
 {/* <Table/> */}
-<ParentComp/>
+{/* <ParentComp/> */}
+<RefDemo/>
       </div>
   );
 }
