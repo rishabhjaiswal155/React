@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import {Rishabh} from './components/Rishabh';
+import { Rishabh } from './components/Rishabh';
 import Rishi from './components/Rishi';
 import Hello from './components/Hello';
 import Friends from './components/Friends';
@@ -36,9 +36,10 @@ import HoverCount from './components/HoverCount';
 import ClickCounterTwo from './components/ClickCounterTwo';
 import HoverCountTwo from './components/HoverCountTwo';
 import User from './components/User';
+import Counter from './components/Counter';
 function App() {
   return (
-     <div className="App">
+    <div className="App">
       {/* <h1 className='error'>Error</h1>
       <h1 className={styles.success}>Success</h1>
       {/* <Rishabh/> */}
@@ -70,7 +71,7 @@ function App() {
       <Jigri1 name="Dnyaneshwar" nickname="Mauli">
         <p>(This is Children props)</p>
         <button>smash</button>
-      </Jigri1> */} 
+      </Jigri1> */}
       {/* <FunctionClick/>
       <ClassClick/>
       <EventBind/>
@@ -82,14 +83,14 @@ function App() {
       <Inline/> */}
       {/* <Form/> */}
       {/* <LifeCycleA/> */}
-{/* <FragmentDemo/> */}
-{/* <Table/> */}
-{/* <ParentComp/> */}
-{/* <RefDemo/> */}
-{/* <FocusInput/> */}
-{/* <FRParentInput/> */}
-{/* <PortalDemo/> */}
-{/* <ErrorBoundary>
+      {/* <FragmentDemo/> */}
+      {/* <Table/> */}
+      {/* <ParentComp/> */}
+      {/* <RefDemo/> */}
+      {/* <FocusInput/> */}
+      {/* <FRParentInput/> */}
+      {/* <PortalDemo/> */}
+      {/* <ErrorBoundary>
 <Hero heroName="Batman"></Hero>
 </ErrorBoundary>
 <ErrorBoundary>
@@ -98,12 +99,21 @@ function App() {
 <ErrorBoundary>
 <Hero heroName="Joker"></Hero>
 </ErrorBoundary> */}
-{/* <ClickCount name="Rishabh"/>
+      {/* <ClickCount name="Rishabh"/>
 <HoverCount name="Rishabh"/> */}
-<ClickCounterTwo/>
+      {/* <ClickCounterTwo/>
 <HoverCountTwo/>
-<User render={(isLoggedIn)=>isLoggedIn ? 'Rishabh': 'Guest' }/>
-     </div>
+<User render={(isLoggedIn)=>isLoggedIn ? 'Rishabh': 'Guest' }/> */}
+      <Counter>
+        {(count,incrementCount) => (
+        <ClickCounterTwo count={count} incrementCount={incrementCount} />)}
+      </Counter>
+      <Counter>
+        {(count,incrementCount) => (
+        <HoverCountTwo count={count} incrementCount={incrementCount} />)}
+        </Counter>
+
+    </div>
   );
 }
 
