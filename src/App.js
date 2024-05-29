@@ -35,6 +35,7 @@ import ClickCount from './components/ClickCount';
 import HoverCount from './components/HoverCount';
 import ClickCounterTwo from './components/ClickCounterTwo';
 import HoverCountTwo from './components/HoverCountTwo';
+import User from './components/User';
 function App() {
   return (
      <div className="App">
@@ -101,6 +102,7 @@ function App() {
 <HoverCount name="Rishabh"/> */}
 <ClickCounterTwo/>
 <HoverCountTwo/>
+<User render={(isLoggedIn)=>isLoggedIn ? 'Rishabh': 'Guest' }/>
      </div>
   );
 }
