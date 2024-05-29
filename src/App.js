@@ -29,9 +29,11 @@ import RefDemo from './components/RefDemo';
 import FocusInput from './components/FocusInput';
 import FRParentInput from './components/FRParentInput';
 import PortalDemo from './components/PortalDemo';
+import Hero from './components/Hero';
+import ErrorBoundary from './components/ErrorBoundary';
 function App() {
   return (
-    <div className="App">
+     <div className="App">
       {/* <h1 className='error'>Error</h1>
       <h1 className={styles.success}>Success</h1>
       {/* <Rishabh/> */}
@@ -81,8 +83,17 @@ function App() {
 {/* <RefDemo/> */}
 {/* <FocusInput/> */}
 {/* <FRParentInput/> */}
-<PortalDemo/>
-      </div>
+{/* <PortalDemo/> */}
+<ErrorBoundary>
+<Hero heroName="Batman"></Hero>
+</ErrorBoundary>
+<ErrorBoundary>
+<Hero heroName="SuperMan"></Hero>
+</ErrorBoundary>
+<ErrorBoundary>
+<Hero heroName="Joker"></Hero>
+</ErrorBoundary>
+     </div>
   );
 }
 
