@@ -95,8 +95,8 @@ function App() {
 <ErrorBoundary>
 <Hero heroName="Joker"></Hero>
 </ErrorBoundary> */}
-<ClickCount/>
-<HoverCount/>
+<ClickCount name="Rishabh"/>
+<HoverCount name="Rishabh"/>
      </div>
   );
 }
