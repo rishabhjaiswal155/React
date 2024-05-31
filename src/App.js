@@ -114,9 +114,9 @@ function App() {
         {(count,incrementCount) => (
         <HoverCountTwo count={count} incrementCount={incrementCount} />)}
         </Counter> */}
-        <UserProvider value="Rishabh">
+        {/* <UserProvider value="Rishabh"> */}
         <ComponentC/>
-        </UserProvider>
+        {/* </UserProvider> */}
     </div>
   );
 }
